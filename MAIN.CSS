@@ -1,3 +1,57 @@
+.container {
+  display: flex;
+  gap: 10px;
+  gap: 10px 20px; /* row-gap column gap */
+  row-gap: 10px;
+  column-gap: 20px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+  background: rgb(238, 234, 246);
+  height: 80px;
+  width: 100%;
+}
+
+nav {
+  float: right;
+  margin-right: 20px;
+  text-align: center; /* Center the content horizontally */
+}
+
+nav ul {
+  display: inline-block;
+  line-height: 80px;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+nav a {
+  color: rgb(18, 16, 16);
+  font-size: 17px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  padding: 10px 15px; /* Adding padding for better spacing */
+}
+
+nav a:hover {
+  background: rgba(133, 27, 255, 0.5);
+  transition: 0.5s;
+}
 body {
 
     background-color: rgb(220, 217, 245);
@@ -15,7 +69,7 @@ body {
     letter-spacing: 3px;}
     p {
         margin-top: 25px;
-        margin-bottom: 10px;
+        margin-bottom: 25px;
         margin-right: 70px;
         margin-left: 40px;
       }
@@ -25,25 +79,41 @@ h2 {
     margin-right: 500px;
     margin-left: 40px;
   }
-  
+  h2 {
+    font-size: 30px;
+  }
+
+.center
+ {margin-top: 25px;
+  margin-bottom: 10px;
+  margin-right: 500px;
+  margin-left: 400px;
+}
+
 h3 {
     margin-top: 25px;
     margin-bottom: 10px;
     margin-right: 70px;
     margin-left: 40px;
   }
+  h3 {
+    font-size: 20px;
+  }
 table {
     margin-top: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 70px;
     margin-right: 500px;
-    margin-left: 500px;
+    margin-left: 600px;
   }
 
 h1 {
     margin-top: 50px;
-    margin-bottom: 25px;
-    margin-right: 50px;
-    margin-left: 1000px;
+    margin-bottom: 50px;
+    margin-right: 40px;
+    margin-left: 850px;
+  }
+  h1 {
+    font-size: 60px;
   }
 figcaption p {
     margin-top: 50px;
@@ -57,6 +127,61 @@ h3 {
     margin: auto;  
     padding: 10px;
     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
- a{
-    position: absolute; Left: 40%;}
+  img {
+    display: inline-block;
+    width: 600px; 
+    height: 400px; 
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  figcaption {
+      text-align: center;
+      margin-top: 10px;
+      font-style: italic;
+  }
+  .resized-image {
+    width: 300px; 
+    height: 600px; 
+
+    
+    body {
+      text-align: center;
+  }
+
+}
+ .links-section {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ height: 20vh; /
+}
+
+ .links-section a {
+  margin: 10px 0;
+  text-decoration: none;
+  font-weight: bold; 
+   }
+        
+ /* HEADER */
+.Fashion{
+ align-self: center; }
+ h4 {
+  font-size: 30px;
+}
+/* styles.css */
+.resized-image {
+  width: 300px;
+  height: 200px;
+}
+.move-right {
+  padding-left: 675px;
+}
