@@ -12,24 +12,17 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-}
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav {
   background: rgb(238, 234, 246);
   height: 80px;
   width: 100%;
-}
-
-nav {
   float: right;
   margin-right: 20px;
   text-align: center; /* Center the content horizontally */
 }
-
 nav ul {
   display: inline-block;
   line-height: 80px;
@@ -52,53 +45,57 @@ nav a:hover {
   background: rgba(133, 27, 255, 0.5);
   transition: 0.5s;
 }
-body {
+h1 {
+  border-block-end-style: solid;
+  border-block-end-color: rgb(235, 236, 248);
+  font-family: Merriweather;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 40px;
+  margin-left: 850px;
+  font-size: 60px;
+}
+h2 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  margin-right: 500px;
+  margin-left: 40px;
+  font-size: 30px;
+}
+h3 {
+  border: 2px solid rgb(0, 0, 0);
+  outline: #eeeaf1 solid 5px;
+  margin: auto;  
+  padding: 10px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 70px;
+  margin-left: 40px;
+  font-size: 20px;
+}
+h6 {
+  margin-right: 50px;
+  margin-left: 40px;
+  font-size: 20px;
 
+}
+
+body {
     background-color: rgb(220, 217, 245);
+    font-family: Montserrat;
+    letter-spacing: 3px;
     
-    }
-
-    body {
-        font-family: Garamond, serif;}
-h1 {
-    font-family: Garamond, serif;}
-h1 {
-    border-block-end-style: solid;
-    border-block-end-color: rgb(235, 236, 248);}
-body {
-    letter-spacing: 3px;}
+  }
+    
     p {
         margin-top: 25px;
         margin-bottom: 25px;
         margin-right: 70px;
         margin-left: 40px;
       }
-h2 {
-    margin-top: 25px;
-    margin-bottom: 10px;
-    margin-right: 500px;
-    margin-left: 40px;
-  }
-  h2 {
-    font-size: 30px;
-  }
-
-.center
- {margin-top: 25px;
-  margin-bottom: 10px;
-  margin-right: 500px;
-  margin-left: 400px;
-}
-
-h3 {
-    margin-top: 25px;
-    margin-bottom: 10px;
-    margin-right: 70px;
-    margin-left: 40px;
-  }
-  h3 {
-    font-size: 20px;
-  }
+      
+      
 table {
     margin-top: 25px;
     margin-bottom: 70px;
@@ -106,64 +103,46 @@ table {
     margin-left: 600px;
   }
 
-h1 {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-right: 40px;
-    margin-left: 850px;
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
-  h1 {
-    font-size: 60px;
-  }
+
 figcaption p {
     margin-top: 50px;
     margin-bottom: 25px;
     margin-right: 50px;
     margin-left: 40px;
   }
-h3 {
-    border: 2px solid rgb(0, 0, 0);
-    outline: #eeeaf1 solid 5px;
-    margin: auto;  
-    padding: 10px;
+  figcaption {
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  img {
-    display: inline-block;
-    width: 600px; 
-    height: 400px; 
-  }
+    margin-top: 10px;
+    font-style: italic;
+}
+
+
   .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    margin-top: 25px;
+  margin-bottom: 10px;
+  margin-right: 500px;
+  margin-left: 400px;
   }
 
-  figcaption {
-      text-align: center;
-      margin-top: 10px;
-      font-style: italic;
-  }
-  .resized-image {
-    width: 300px; 
-    height: 600px; 
-  }
  .links-section {
  display: flex;
  flex-direction: column;
  align-items: center;
  justify-content: center;
  height: 20vh; 
-}
-
- .links-section a {
-  margin: 10px 0;
+ margin: 10px 0;
   text-decoration: none;
-  font-weight: bold; 
-   }
+  font-weight: bold;
+}
         
  /* HEADER */
 .Fashion{
@@ -178,4 +157,30 @@ h3 {
 }
 .move-right {
   padding-left: 675px;
+}
+/* CSS FOR BUTTONS */
+button {
+  font-size: 18px;
+  padding: 10px;
+  margin: 0 10px;
+  margin-right: 50px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+#qtyBox {
+  font-size: 18px;
+  width: 40px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.862); 
+}
+
+#add {
+  background-color: #4a6c4b; 
+  color: white; 
+}
+
+#sub {
+  background-color: rgba(255, 0, 85, 0.745); 
+  color: white; 
 }

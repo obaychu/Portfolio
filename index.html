@@ -43,12 +43,12 @@ I can talk about fashion all day like it's nobody's business. However, when I go
 
     <table id="example1" border="2">
         <tr>
-            <th>Rank</th>
+            <th>My Ranking</th>
             <th>Brand</th>
             <th>Clothing type</th>
         </tr>
         <tr>
-            <td>1</td>
+            <td> 1</td>
             <td>Levis</td>
             <td>Sherpa Jacket</td>
         </tr>
@@ -64,13 +64,42 @@ I can talk about fashion all day like it's nobody's business. However, when I go
         </tr>
     </table>
 
-    <button id="""="button"> Click for Levis
-    </button>
-    <button id="button"> Click for Pumma
-    </button>
-    <button id="button"> Click for Steve Madden
-    </button>
+<h6 id="Question">How important is Fahion to you?</h6>
+<button id="sub">-</button>
+<input type="text" id="qtyBox" readonly="" value="0">
+<button id="add">+</button>
 
+<script type="text/javascript">
+    let addBtn = document.querySelector('#add');
+    let subBtn = document.querySelector('#sub');
+    let qty = document.querySelector('#qtyBox');
+
+    addBtn.addEventListener('click', () => {
+        qty.value = parseInt(qty.value) + 1;
+        updateTextColor();
+    });
+
+    subBtn.addEventListener('click', () => {
+        if (qty.value <= 0) {
+            qty.value = 0;
+        } else {
+            qty.value = parseInt(qty.value) - 1;
+            updateTextColor();
+        }
+    });
+
+    function updateTextColor() {
+        if (parseInt(qty.value) % 2 === 0) {
+            // Even number
+            qty.style.color = 'green'; 
+        } else {
+            // Odd number
+            qty.style.color = 'red'; 
+        }
+    }
+</script>
+
+</script>
 
     <div class="links-section">
 <h4>Links to My Pages</h4>
@@ -83,9 +112,41 @@ I can talk about fashion all day like it's nobody's business. However, when I go
         When I'm not in school, I enjoy traveling and capturing moments through photography. I specialize in film photography, owning multiple cameras, and I am always eager to expand my collection. Recently, I've furthered my skills by delving into the fascinating process of developing my own film.
     </p>
     <figure>
-        <img src="https://lirp.cdn-website.com/17c4fc41/dms3rep/multi/opt/image-film-1920w.jpg" class="center" alt="35 mm Film" width="300" height="200">
+        <img src="https://lirp.cdn-website.com/17c4fc41/dms3rep/multi/opt/image-film-1920w.jpg" class="center" alt="35 mm Film">
+        <style>
+            img.center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 100%; 
+                height: auto; 
+            }
+        </style>
         <figcaption>Figure 2: 35 mm Film Camera and Film</figcaption>
     </figure>
+
+    <title>Number List</title>
+    <style>
+    </style>
+</head>
+<body 2>
+
+    <ul id="numbers"></ul>
+
+    <script>
+        for (let i = 1; i <= 100; i++) {
+            let newLi = document.createElement("li");
+            newLi.innerText = i;
+    
+            if (i % 2 === 0) {
+                newLi.innerText += " (even)";
+            } else {
+                newLi.innerText += " (odd)";
+            }
+    
+            document.getElementById('numbers').appendChild(newLi);
+        }
+    </script>
 
     <h3>I'd love to hear from you! Click the link below to contact me </h3>
     <!-- Applied in CSS -->
